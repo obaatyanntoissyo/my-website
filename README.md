@@ -87,3 +87,114 @@ my-website/
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compleight Homepage | サービス</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Compleight Homepage</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="service.html" class="active">サービス</a></li>
+          <li><a href="pricing.html">料金プラン</a></li>
+          <li><a href="support.html">サポート</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- サービスイメージ -->
+  <section class="service-hero" style="background-image: url('assets/images/content-rich.jpg');">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h2>プロ品質のコンテンツをいつでもすぐに利用</h2>
+        <p>「撮影もライティングも、もう悩まない。」それがCompleight Homepageの強みです。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- サービスの特徴 -->
+  <section class="service-features container">
+    <h3>主要機能・特徴</h3>
+    <ul>
+      <li><strong>写真＆文章ライブラリ</strong>：美容・不動産・飲食など多ジャンルに対応</li>
+      <li><strong>簡単更新機能</strong>：管理画面のUIがシンプルで誰でも手軽に修正可能</li>
+      <li><strong>プロ仕様テンプレート</strong>：スマホ対応・SEOを考慮したデザイン</li>
+      <li><strong>サポート体制</strong>：メールやチャットで質問・相談が可能</li>
+    </ul>
+  </section>
+
+  <!-- 利用メリット -->
+  <section class="benefits container">
+    <h3>利用メリット</h3>
+    <div class="benefit-list">
+      <div class="benefit-item">
+        <h4>手間とコストを削減</h4>
+        <p>外注すると高額になりがちな撮影やライティングを一括でカバー。</p>
+      </div>
+      <div class="benefit-item">
+        <h4>更新頻度が高いほどお得</h4>
+        <p>頻繁に写真を差し替える業種（美容・建築など）に最適です。</p>
+      </div>
+      <div class="benefit-item">
+        <h4>安心のサポート</h4>
+        <p>ITに苦手意識があっても大丈夫。専門チームがしっかりフォロー。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 導入ステップ -->
+  <section class="steps container">
+    <h3>導入ステップ</h3>
+    <ol>
+      <li><strong>お申し込み</strong>：基本情報や業種をヒアリング</li>
+      <li><strong>素材選定</strong>：当社の写真＆文章ライブラリからベースを構築</li>
+      <li><strong>管理画面で調整</strong>：顧客自身でカンタン最終修正</li>
+      <li><strong>公開</strong>：サイトが完成し、すぐに運用を開始</li>
+      <li><strong>更新サポート</strong>：月額費用に含まれる範囲で継続サポート</li>
+    </ol>
+  </section>
+
+  <!-- 簡易FAQ -->
+  <section class="faq container">
+    <h3>FAQ（一部抜粋）</h3>
+    <div class="faq-item">
+      <button class="faq-question">Q. 初期費用と月額料金の内訳は？</button>
+      <div class="faq-answer">
+        <p>初期費用は撮影・文章準備のコストやテンプレート作成費にあたり、月額料金はシステム維持・共有コンテンツの追加などを賄っています。</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Q. 写真や文章はすべて自由に使えますか？</button>
+      <div class="faq-answer">
+        <p>当社が購入や制作した素材をライブラリから利用可能です。利用範囲は契約プランに準じますので、詳細はお問合せください。</p>
+      </div>
+    </div>
+    <!-- FAQを増やす場合はさらに追加 -->
+  </section>
+
+  <!-- CTA -->
+  <section class="cta container">
+    <p>より詳しい情報やサンプルサイトを見たい方は、料金プランや導入事例をチェック！</p>
+    <a href="pricing.html" class="btn btn-primary">料金プラン</a>
+    <a href="support.html" class="btn btn-secondary">サポートについて</a>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Compleight Homepage</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
