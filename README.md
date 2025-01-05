@@ -198,3 +198,289 @@ my-website/
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+/* assets/css/style.css */
+
+/* ベース設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #0066cc; /* 青系 */
+}
+
+/* コンテナや共通レイアウト */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* ヘッダー */
+.header {
+  background-color: #f2f8fc; /* 薄い水色の背景 */
+  padding: 1rem 0;
+}
+.logo {
+  font-size: 1.5rem;
+  color: #0066cc;
+  font-weight: bold;
+}
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.nav ul li a {
+  color: #0066cc;
+  font-weight: 500;
+}
+.nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* ヒーローセクション */
+.hero,
+.service-hero,
+.pricing-hero,
+.support-hero {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 102, 204, 0.5); /* 半透明の青 */
+}
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  z-index: 1;
+}
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 共通見出し */
+h3 {
+  font-size: 1.6rem;
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+.btn-primary {
+  background-color: #0066cc;
+  color: #fff;
+}
+.btn-secondary {
+  background-color: #00aaff;
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* 特徴・メリットなど */
+.features, .service-features, .benefits, .cta {
+  padding: 2rem 0;
+}
+.feature-list,
+.benefit-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.feature-item,
+.benefit-item {
+  flex: 1 1 30%;
+  background-color: #f2f8fc;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* CTAセクション */
+.cta {
+  text-align: center;
+  background-color: #eaf4fa;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+.cta p {
+  margin-bottom: 1rem;
+}
+
+/* 料金テーブル */
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.plan-box {
+  flex: 1 1 300px;
+  background-color: #f2f8fc;
+  padding: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.plan-box h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.plan-box .price {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* 比較表 */
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  text-align: center;
+}
+.comparison-table thead {
+  background-color: #f2f8fc;
+}
+
+/* FAQ */
+.faq-item {
+  margin-bottom: 1rem;
+}
+.faq-question {
+  display: block;
+  width: 100%;
+  background: #0066cc;
+  color: #fff;
+  text-align: left;
+  padding: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+.faq-answer {
+  display: none; /* 最初は非表示 */
+  background-color: #f2f8fc;
+  padding: 1rem;
+}
+.faq-item.active .faq-answer {
+  display: block; /* ボタンを押すと表示 */
+}
+
+/* 問い合わせフォーム */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+}
+.contact-form label {
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form button {
+  align-self: flex-start;
+}
+
+/* フッター */
+.footer {
+  background-color: #f2f8fc;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* レスポンシブ例 */
+@media (max-width: 768px) {
+  .feature-list, .benefit-list, .pricing-table {
+    flex-direction: column;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .nav ul li {
+    margin: 0.5rem 0;
+  }
+  .comparison-table table {
+    font-size: 0.9rem;
+  }
+  .cta, .features, .benefits, .service-features, .faq, .manual {
+    padding: 1rem 0;
+  }
+}
+
+/* assets/js/main.js */
+
+// FAQアコーディオン
+document.addEventListener('DOMContentLoaded', () => {
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const questionBtn = item.querySelector('.faq-question');
+    questionBtn.addEventListener('click', () => {
+      // すでにactiveの場合は閉じる
+      if (item.classList.contains('active')) {
+        item.classList.remove('active');
+      } else {
+        // 他のactiveを閉じる
+        faqItems.forEach(i => i.classList.remove('active'));
+        // 自分だけactiveに
+        item.classList.add('active');
+      }
+    });
+  });
+});
+
+// (例) アニメーションの簡易サンプル: スクロール時にフェードイン
+window.addEventListener('scroll', () => {
+  const fadeIns = document.querySelectorAll('.fade-in');
+  fadeIns.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    // 要素が画面の6割程度に入ったら表示
+    if (rect.top < windowHeight * 0.6) {
+      el.classList.add('visible');
+    }
+  });
+});
